@@ -1,0 +1,31 @@
+{
+    "name": "jcgdev/laravel-hosting-autopush",
+    "description": "🚀Laravel hosting autopush allows us to deploy our laravel website automatically on our shared hosting whenever there is a change to the GitHub repository",
+    "keywords": ["laravel", "shared hosting", "php"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "José Manuel",
+            "email": "96880581+JoseCGDEV@users.noreply.github.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Jcgdev\\AutoPush\\" : "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        },
+        "laravel" : {
+            "providers" : [
+                "Jcgdev\\AutoPush\\AutoPushServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+
+}
