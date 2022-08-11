@@ -11,9 +11,8 @@ class AutoPushServiceProvider extends ServiceProvider
 
     public function boot()
     {
-        $this->publishes([
-            __DIR__. '/workflow/' => base_path('.github/workflows/')
-        ], 'laravel-hosting-autopush');
+        $this->publishes( [__DIR__. '/workflow/' => base_path('.github/workflows/')], 'laravel-hosting-autopush');
+        $this->publishes( [__DIR__. '/config/' => public_path()], 'laravel-hosting-autopush');
     }
 
     public function register()
